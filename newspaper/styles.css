@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+.h1-title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: larger;
+    padding:3%;
+}
+
+.page{
+    display:grid;
+    grid-template-areas:
+    'header header header'
+    'story1 story2 story3'
+    'story4 story5 story5'
+    'footer footer footer'
+    ;
+}
+
+article{
+    border:1px solid black
+}
+
+.story1{
+    grid-area: story1;
+}
+
+ul{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    list-style: none;
+    border: 2px solid black;
+    padding:10%;
+    margin:0;
+    overflow: hidden;
+    background-color: peru;
+    margin:0;
+    grid-area: navbar;
+}
+
+li{
+    float:left;
+    display:flex;
+    padding:0 0.8rem;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li:hover{
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
